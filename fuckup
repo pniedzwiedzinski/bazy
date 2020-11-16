@@ -1,0 +1,12 @@
+#!/bin/sh
+## Reset the env. If you pass some argument, then it won't run again mysql -
+## it will only remove.
+
+docker-compose down
+
+## For some reason docker-compose doesn't remove volumes, so run this to clear
+## everything. This is usually good as it removes all unused volumes from your
+## system, but you should be aware of that.
+docker volume prune
+
+[ -z "$1" ] && docker-compose up -d
