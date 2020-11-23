@@ -13,5 +13,6 @@ in
     ];
     shellHook = ''
       export LESS="-SRXF"
+      docker-compose up -d
     '';
   }

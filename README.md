@@ -12,7 +12,7 @@ mycli -p password
 
 ### usage with nix
 
-If you have nix with direnv setup correctly then to setup the env run `direnv allow .`
+If you have nix with direnv set up correctly, then to setup the env run `direnv allow .`
 
 ```sh
 docker-compose up -d
